@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		
+
 		Button clocation, bangalore, chennai;
 		clocation = (Button) findViewById(R.id.clocation);
 		bangalore = (Button) findViewById(R.id.bangalore);
@@ -25,8 +25,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(MainActivity.this,
-						MapActivity.class);
+				Intent intent = new Intent(MainActivity.this, MapActivity.class);
 				intent.putExtra("Choice", 0);
 				startActivity(intent);
 
@@ -38,8 +37,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(MainActivity.this,
-						MapActivity.class);
+				Intent intent = new Intent(MainActivity.this, MapActivity.class);
 				intent.putExtra("Choice", 1);
 				intent.putExtra("latb", 12.9716);
 				intent.putExtra("lngb", 77.5946);
@@ -53,8 +51,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(MainActivity.this,
-						MapActivity.class);
+				Intent intent = new Intent(MainActivity.this, MapActivity.class);
 				intent.putExtra("Choice", 2);
 				intent.putExtra("latc", 13.0827);
 				intent.putExtra("lngc", 80.2707);
